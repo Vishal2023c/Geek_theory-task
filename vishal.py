@@ -23,12 +23,12 @@ class Distance:
         print(result)
 
 
-# lat1 = float(input("Enter start point letitude value: "))
-# long1 = float(input("Enter start point longitude value: "))
-# lat2 = float(input("Enter end point letitude value: "))
-# long2 = float(input("Enter end point longitude value: "))
+lat1 = float(input("Enter start point letitude value: "))
+long1 = float(input("Enter start point longitude value: "))
+lat2 = float(input("Enter end point letitude value: "))
+long2 = float(input("Enter end point longitude value: "))
 
-lat1, long1 = 22.962267, 76.050797
-lat2, long2 = 23.179300, 75.784912
+#lat1, long1 = 22.962267, 76.050797
+#lat2, long2 = 23.179300, 75.784912
 
 dist = Distance(lat1, long1, lat2, long2)
