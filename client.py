@@ -3,12 +3,19 @@ import socket
 client=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 client.connect(("localhost",1111))
 
-while True:
+done=False
+
+while not done:
     
-    data=input("Enter any input : ")
-    try:
+        client.send(input("massage: ").encode('utf-8'))
+        response=client.recv(2024).decode('utf-8')
         
-        client.send(data.encode())
-    except:
-        client.close()
-        break
+        if response=="vishal":
+            done=True
+        else:
+            print(response)
+        
+client.close()
+        
+        
+     
