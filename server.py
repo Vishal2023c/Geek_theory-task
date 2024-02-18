@@ -8,10 +8,19 @@ print("Waiting for connection ------------")
 
 client ,address=server.accept()
 print("connection is ready -----------")
-while True:
-    try:
-        data=client.recv(1024).decode()
-        print(data)
-    except:
-        client.close()
-        break
+done=False
+
+while not done:
+    
+        response=client.recv(1024).decode('utf-8')
+        
+        if response=="vishal":
+            done=True
+        else:
+            print(response)
+             
+        client.send(input("massage:").encode('utf-8'))
+    
+client.close()
+server.close()
+        
