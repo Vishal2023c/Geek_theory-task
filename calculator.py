@@ -1,26 +1,23 @@
 import argparse
 from colorama import Fore,Back,Style,init
-#Addition function
 def add(a,b):
     val = a+b
     return val
- 
-#Subtraction function
+
 def sub(a,b):
     val = a-b
     return val
- 
-#Division function
+
 def div(a,b):
     val = a/b
     return val
  
-#Multiplication function
+
 def multi(a,b):
     val = a*b
     return val
 
-#Main function
+
 def Main():
     parser= argparse.ArgumentParser(
             description="This is a calculator in which you can calculate numbers.",
