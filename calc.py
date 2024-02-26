@@ -55,7 +55,22 @@ if add:
         result+=integer
     print(Fore.LIGHTYELLOW_EX+"Total :",result)
 
+elif sub:    
+    result=int(sub[0])
+    for i in sub[1:]: 
+        integer=int(i)       
+        result= result-integer
+        
+    print(Fore.BLUE+"Total :",result)
 
+
+elif div:    
+    result=int(div[0])
+    for i in div[1:]: 
+        integer=int(i)       
+        result= result / integer
+        
+    print(Fore.CYAN+"Total :",result)
     
 elif multi:    
     result=1
@@ -63,4 +78,4 @@ elif multi:
         integer=int(i)       
         result= result*integer
         
-    print(Fore.MAGENTA+"Total :",result)
+    print(Fore.GREEN+"Total :",result)
