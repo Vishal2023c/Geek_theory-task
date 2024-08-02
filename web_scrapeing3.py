@@ -8,14 +8,6 @@ password="Vishal@95"
 
 driver=webdriver.Chrome()
 driver.get("https://www.amazon.in/")
-     
-# link=driver.find_element(By.XPATH,"//div[@class='a-row a-text-center']//img").get_attribute('src')
-# captcha=AmazonCaptcha.fromlink(link)
-# captcha_value=AmazonCaptcha.solve(captcha)
-# driver.find_element(By.XPATH,"//*[@id='captchacharacters']").send_keys(captcha_value)
-# driver.find_element(By.XPATH,"/html/body/div/div[1]/div[3]/div/div/form/div[2]/div/span/span/button").click()
-# time.sleep(5)
-
 
 driver.find_element(By.XPATH,"//*[@id='nav-link-accountList-nav-line-1']").click()
 time.sleep(5)
